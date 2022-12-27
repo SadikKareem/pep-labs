@@ -40,12 +40,12 @@
     :git_user_name: SadikKareem
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 7
+  :count_tests_passed: 9
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 7
+  :count_tests_passed: 9
   Start:
     :Week: 1
     :Order: 1
@@ -194,7 +194,7 @@
     :Order: 4
     :Type: lab
     :count_tests: 9
-    :count_tests_passed: 7
+    :count_tests_passed: 9
     :tests:
       getLengthTest1: 1
       getLengthTest2: 1
@@ -203,8 +203,8 @@
       getNthElementOfArrayTest3: 1
       setNthElementOfArrayTest1: 1
       setNthElementOfArrayTest2: 1
-      returnNewArraySizeNTest1: 0
-      returnNewArraySizeNTest2: 0
+      returnNewArraySizeNTest1: 1
+      returnNewArraySizeNTest2: 1
   WhileLoop:
     :Week: 2
     :Order: 5

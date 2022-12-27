@@ -48,8 +48,9 @@ public class ArrayBasics {
      * @return a new int array that can contain n elements.
      */
     public int[] returnNewArraySizeN(int n){
-        int[] newArray;
-        newArray = returnNewArraySizeN(n);
+        int[] newArray = new int[n];
+        //newArray = returnNewArraySizeN(n);
+       //return returnNewArraySizeN(n);
        return newArray;
     }
 }
