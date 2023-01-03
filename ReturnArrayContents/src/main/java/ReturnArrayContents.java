@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ReturnArrayContents {
     /**
      * Return a string with an array's contents, formatted with spaces.
@@ -30,9 +32,11 @@ public class ReturnArrayContents {
     public String arrayToString(int[] nums){
         String str = "";
         for(int i = 0; i < nums.length; i++){
-            str = nums[i] + "f";
-            System.out.println(str);
+            str = (Arrays.toString(nums)+ " ");
+            //System.out.println(str);
+            //return str;
         }
+        System.out.println(str);
         return str;
     }
 }
