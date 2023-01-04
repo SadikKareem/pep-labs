@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class ReturnArrayContents {
     /**
@@ -32,11 +32,11 @@ public class ReturnArrayContents {
     public String arrayToString(int[] nums){
         String str = "";
         for(int i = 0; i < nums.length; i++){
-            str = (Arrays.toString(nums)+ " ");
-            //System.out.println(str);
-            //return str;
+            //System.out.println(nums[i] + ",");
+            str = (Integer.toString(nums[i]));
+            System.out.println(str);
         }
-        System.out.println(str);
+        //System.out.println(str);
         return str;
     }
 }
