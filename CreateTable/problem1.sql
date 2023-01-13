@@ -1,0 +1,1 @@
+Create Table song(Title varChar(255), Artist varChar(255));
