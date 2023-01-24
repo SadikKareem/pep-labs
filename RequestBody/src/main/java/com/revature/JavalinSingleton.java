@@ -5,6 +5,7 @@ package com.revature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.javalin.Javalin;
+import javafx.application.Application;
 
 /**
  * Background: A json string representing a song will be sent in this POST request with the following fields: 
@@ -29,15 +30,17 @@ public class JavalinSingleton {
                 ObjectMapper om = new ObjectMapper();
                 Song song = om.readValue(jsonString, Song.class);
 
+                ctx.contentType("Application/json");
+
                 //using that object to retrieve last name
                 //song.getArtistName();
-                String theArtistName = song.getArtistName();
+                //String theArtistName = song.getArtistName();
 
                 //using jackson "writeValueAsString" to turn the retieved value back to json
-                String stringToBeReturned = om.writeValueAsString(theArtistName);
+                //String stringToBeReturned = om.writeValueAsString(song);
 
                 //returning that json string
-                ctx.result(stringToBeReturned);
+                ctx.result(song.getArtistName());
                 
         });
 
