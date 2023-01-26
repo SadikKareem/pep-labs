@@ -30,10 +30,10 @@ public class JavalinSingleton {
                 ObjectMapper om = new ObjectMapper();
                 Song song = om.readValue(jsonString, Song.class);
 
-                ctx.contentType("Application/json");
+                //ctx.contentType("Application/json");
 
                 //using that object to retrieve last name
-                //song.getArtistName();
+                song.getArtistName();
                 //String theArtistName = song.getArtistName();
 
                 //using jackson "writeValueAsString" to turn the retieved value back to json
@@ -41,6 +41,7 @@ public class JavalinSingleton {
 
                 //returning that json string
                 ctx.result(song.getArtistName());
+                //ctx.result(theArtistName);
                 
         });
 
