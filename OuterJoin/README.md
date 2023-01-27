@@ -107,6 +107,7 @@ Consider the three tables below for the following problems:
 ## Problem 1
 Problem 1: Use a LEFT OUTER JOIN to combine the class (left side) and student (right side) tables using the class column as the join on column. This means that when no student exists for a class, a row with a NULL class will be in the resulting query. Hint: You should start with `SELECT * FROM class`
 
+
 ## Problem 2
 Problem 2: Use a RIGHT OUTER JOIN to combine the class (left side) and textbook (right side) tables using the class column as the join on column. This means that when no class exists for a textbook, a row with a NULL class will be in the resulting query. Hint: You should start with `SELECT * FROM class`
 
