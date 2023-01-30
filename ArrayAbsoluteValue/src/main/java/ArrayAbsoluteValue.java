@@ -9,6 +9,17 @@ public class ArrayAbsoluteValue {
      * @return the absolute value array of nums.
      */
     public int[] getArrayAbs(int[] nums){
-        return null;
+        //first, i need to create an array that i can add the values to when i traverse nums in a for loop and change the negative values
+
+        int[] finalArray = new int[nums.length];
+
+        
+        for(int i = 0; i < nums.length; i++){
+            
+            finalArray[i] = Math.abs(nums[i]);
+            
+        }
+        return finalArray ;
+
     }
 }
