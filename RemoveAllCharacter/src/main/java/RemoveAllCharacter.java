@@ -14,7 +14,7 @@ public class RemoveAllCharacter {
     public String removeAll(String str, String ch){
         String returnedString = "";
         returnedString = str.replaceAll(ch, returnedString);
-        
+
         return returnedString;
 
     }
