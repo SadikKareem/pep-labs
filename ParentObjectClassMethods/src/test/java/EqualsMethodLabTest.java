@@ -29,6 +29,7 @@ public class EqualsMethodLabTest {
         sample2.b = true;
         Assert.assertTrue(sample1.equals(sample2));
     }
+    
 
     /**
      * An object should not be equal to an object which has a differing value (b)
