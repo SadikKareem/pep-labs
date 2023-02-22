@@ -19,10 +19,10 @@ public class InsertPosition {
         int startIndex = 0;
         int lastIndex = nums.length -1;
         while(startIndex <= lastIndex){
-            int theIndex = startIndex + lastIndex / 2;
+            int theIndex = (startIndex + lastIndex) / 2;
             if(nums[theIndex] == target){
                 return theIndex;
-            }else if(nums[theIndex]> target){
+            }else if(nums[theIndex] > target){
                 lastIndex = theIndex -1;
             }else{
                 startIndex = theIndex +1;
