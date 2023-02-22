@@ -15,6 +15,20 @@ public class InsertPosition {
      * @return return the index that a number should be inserted into a sorted array.
      */
     public int searchInsert(int[] nums, int target) {
-        return -1;
+        // i need a start and end index to use in the while loop.
+        int startIndex = 0;
+        int lastIndex = nums.length -1;
+        while(startIndex <= lastIndex){
+            int theIndex = startIndex + lastIndex / 2;
+            if(nums[theIndex] == target){
+                return theIndex;
+            }else if(nums[theIndex]> target){
+                lastIndex = theIndex -1;
+            }else{
+                startIndex = theIndex +1;
+            }
+        }
+        return startIndex;
     }
+
 }
