@@ -95,7 +95,6 @@ public class BookDAO {
             preparedStatement.setInt(1, book.getAuthor_id());
             preparedStatement.setString(2, book.getTitle());
             preparedStatement.setInt(3, book.getCopies_available());
-
             preparedStatement.executeUpdate();
             return book;
         }catch(SQLException e){
