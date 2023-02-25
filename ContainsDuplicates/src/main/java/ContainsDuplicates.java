@@ -10,12 +10,13 @@ public class ContainsDuplicates {
      */
     public boolean containsDuplicate(int[] nums){
         Set<Integer> theSet = new HashSet<Integer>();
-       
-            if(!theSet.contains(nums)){
+        for(int num : nums){
+            if(theSet.contains(num)){
                 return true;
-            }else
-        
-        
-        return false;
+            }else{
+                theSet.add(num);
+            }
+        }     
+     return false;
     }
 }
